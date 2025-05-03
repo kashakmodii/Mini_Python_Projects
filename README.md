@@ -36,5 +36,5 @@ Merge multiple PDF files into one using a clean and interactive Jupyter Notebook
 Make sure you have Python 3 installed. Then install the required libraries:
 
 ```bash
-pip install qrcode Pillow PyPDF2
+pip install qrcode PyPDF2
 
