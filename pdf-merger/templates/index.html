@@ -1,1 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Merger Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        
+        .upload-box {
+            border: 2px dashed #3498db;
+            border-radius: 5px;
+            padding: 30px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .file-input {
+            display: none;
+        }
+        
+        .select-btn {
+            background: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .select-btn:hover {
+            background: #2980b9;
+        }
+        
+        .merge-btn {
+            background: #27ae60;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        
+        .merge-btn:hover {
+            background: #219955;
+        }
+        
+        .file-list {
+            margin: 15px 0;
+        }
+        
+        .file-item {
+            background: #f8f9fa;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PDF Merger</h1>
+        <p style="text-align: center;">Combine multiple PDF files into one</p>
+        
+        <form action="/merge" method="post" enctype="multipart/form-data">
+            <div class="upload-box">
+                <p>Select PDF files to merge</p>
+                <input type="file" id="fileInput" name="pdfs" class="file-input" accept=".pdf" multiple required>
+                <label for="fileInput" class="select-btn">Choose Files</label>
+            </div>
+            
+            <div class="file-list" id="fileList">
+                <!-- Selected files will appear here -->
+            </div>
+            
+            <button type="submit" class="merge-btn">Merge PDFs</button>
+        </form>
+    </div>
 
+    <script>
+        // Get the file input element
+        const fileInput = document.getElementById('fileInput');
+        // Get the file list display area
+        const fileList = document.getElementById('fileList');
+        
+        // When files are selected
+        fileInput.addEventListener('change', function() {
+            // Clear previous file list
+            fileList.innerHTML = '';
+            
+            // Check if files were selected
+            if (fileInput.files.length > 0) {
+                // Loop through each selected file
+                for (let i = 0; i < fileInput.files.length; i++) {
+                    const file = fileInput.files[i];
+                    
+                    // Create a div for each file
+                    const fileItem = document.createElement('div');
+                    fileItem.className = 'file-item';
+                    fileItem.textContent = file.name;
+                    
+                    // Add the file to the list
+                    fileList.appendChild(fileItem);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
