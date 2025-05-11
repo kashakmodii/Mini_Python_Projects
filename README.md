@@ -12,9 +12,9 @@ A simple tool to generate QR codes for URLs or text using Python.
 - **Folder**: `QR_Code_Generator`
 - **Libraries Used**: `qrcode`
 - **Features**:
-  - Generate custom QR codes
-  - Save as PNG images
-  - Customize size and colors
+  - Generate custom QR codes  
+  - Save as PNG images  
+  - Customize size and colors  
 
 ---
 
@@ -24,9 +24,22 @@ Merge multiple PDF files into one using a clean and interactive Jupyter Notebook
 - **Folder**: `pdf-merger`
 - **Libraries Used**: `PyPDF2`
 - **Features**:
-  - Select multiple PDFs
-  - Output a single combined PDF
-  - Simple and efficient
+  - Select multiple PDFs  
+  - Output a single combined PDF  
+  - Simple and efficient  
+
+---
+
+### 3. ✍️ Handwritten Text Generator
+Convert typed text into realistic-looking handwritten images using a custom handwriting font.
+
+- **Folder**: `handwritten-text-generator`
+- **Libraries Used**: `Pillow (PIL)`
+- **Features**:
+  - Input any custom text  
+  - Generate a PNG image in a handwritten style  
+  - Supports multi-line and wrapped text  
+  - Uses `.ttf` font like `Pacifico-Regular.ttf` for handwriting effect  
 
 ---
 
@@ -36,5 +49,6 @@ Merge multiple PDF files into one using a clean and interactive Jupyter Notebook
 Make sure you have Python 3 installed. Then install the required libraries:
 
 ```bash
-pip install qrcode PyPDF2
+pip install qrcode PyPDF2 Pillow
+
 
