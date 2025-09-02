@@ -1,12 +1,11 @@
-# 🐍 Mini Python Projects
+#  Mini Python Projects
 
 Welcome to the **Mini Python Projects** repository – a curated collection of beginner-friendly Python projects designed to enhance your coding skills through hands-on practice. Whether you're new to Python or looking to build small utility-based apps, this repository is a great place to start.
 
 ---
 
-## 📂 Project Structure
 
-### 1. 🧾 QR Code Generator
+### 1. QR Code Generator
 A simple tool to generate QR codes for URLs or text using Python.
 
 - **Folder**: `QR_Code_Generator`
@@ -18,7 +17,7 @@ A simple tool to generate QR codes for URLs or text using Python.
 
 ---
 
-### 2. 📎 PDF Merger
+### 2. PDF Merger
 Merge multiple PDF files into one using a clean and interactive Jupyter Notebook interface.
 
 - **Folder**: `pdf-merger`
@@ -30,7 +29,7 @@ Merge multiple PDF files into one using a clean and interactive Jupyter Notebook
 
 ---
 
-### 3. ✍️ Handwritten Text Generator
+### 3. Handwritten Text Generator
 Convert typed text into realistic-looking handwritten images using a custom handwriting font.
 
 - **Folder**: `handwritten-text-generator`
@@ -43,12 +42,6 @@ Convert typed text into realistic-looking handwritten images using a custom hand
 
 ---
 
-## 🚀 Getting Started
-
-### ✅ Requirements
-Make sure you have Python 3 installed. Then install the required libraries:
-
-```bash
 pip install qrcode PyPDF2 Pillow
 
 
