@@ -4,12 +4,11 @@ Welcome to the **Mini Python Projects** repository – a curated collection of b
 
 ---
 
-
 ### 1. QR Code Generator
 A simple tool to generate QR codes for URLs or text using Python.
 
-- **Folder**: `QR_Code_Generator`
-- **Libraries Used**: `qrcode`
+- **Folder**: `QR_Code_Generator`  
+- **Libraries Used**: `qrcode`  
 - **Features**:
   - Generate custom QR codes  
   - Save as PNG images  
@@ -20,8 +19,8 @@ A simple tool to generate QR codes for URLs or text using Python.
 ### 2. PDF Merger
 Merge multiple PDF files into one using a clean and interactive Jupyter Notebook interface.
 
-- **Folder**: `pdf-merger`
-- **Libraries Used**: `PyPDF2`
+- **Folder**: `pdf-merger`  
+- **Libraries Used**: `PyPDF2`  
 - **Features**:
   - Select multiple PDFs  
   - Output a single combined PDF  
@@ -32,8 +31,8 @@ Merge multiple PDF files into one using a clean and interactive Jupyter Notebook
 ### 3. Handwritten Text Generator
 Convert typed text into realistic-looking handwritten images using a custom handwriting font.
 
-- **Folder**: `handwritten-text-generator`
-- **Libraries Used**: `Pillow (PIL)`
+- **Folder**: `handwritten-text-generator`  
+- **Libraries Used**: `Pillow (PIL)`  
 - **Features**:
   - Input any custom text  
   - Generate a PNG image in a handwritten style  
@@ -42,6 +41,20 @@ Convert typed text into realistic-looking handwritten images using a custom hand
 
 ---
 
-pip install qrcode PyPDF2 Pillow
+### 4. Yahoo Finance – Multi-Stock Price Scraper
+Fetch historical price data for several stocks from Yahoo Finance and save everything into a single CSV file.  
+Great starting point for ML projects like return prediction, portfolio analysis, or risk studies.
 
+- **Folder**: `yfinance_multi_stocks`  
+- **Libraries Used**: `yfinance`, `pandas`  
+- **Features**:
+  - Download OHLCV data (Open, High, Low, Close, Volume, Adj Close) for multiple tickers  
+  - Store results in a single CSV with a `Ticker` column  
+  - Clean, ready-to-use dataset for analytics or machine learning  
 
+---
+
+#### Installation
+```bash
+pip install qrcode PyPDF2 Pillow yfinance pandas
+```
