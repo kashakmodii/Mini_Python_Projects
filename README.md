@@ -45,7 +45,7 @@ Convert typed text into realistic-looking handwritten images using a custom hand
 Fetch historical price data for several stocks from Yahoo Finance and save everything into a single CSV file.  
 Great starting point for ML projects like return prediction, portfolio analysis, or risk studies.
 
-- **Folder**: `yfinance_multi_stocks`  
+- **Folder**: `Yahoo_finance`  
 - **Libraries Used**: `yfinance`, `pandas`  
 - **Features**:
   - Download OHLCV data (Open, High, Low, Close, Volume, Adj Close) for multiple tickers  
