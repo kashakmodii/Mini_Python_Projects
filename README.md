@@ -54,7 +54,20 @@ Great starting point for ML projects like return prediction, portfolio analysis,
 
 ---
 
+### 5. Weather App
+A simple Python tool that fetches live weather information (temperature, humidity, and condition) for any city using the OpenWeatherMap API.
+
+- **Folder**: `weather_app`  
+- **Libraries Used**: `requests`  
+- **API Used**: [OpenWeatherMap API](https://openweathermap.org/api)  
+- **Features**:
+  - Fetch real-time weather data by city name  
+  - Displays temperature, humidity, pressure, and condition  
+  - Uses a free API key and handles invalid city errors  
+
+---
+
 #### Installation
 ```bash
-pip install qrcode PyPDF2 Pillow yfinance pandas
+pip install qrcode PyPDF2 Pillow yfinance pandas requests
 ```
